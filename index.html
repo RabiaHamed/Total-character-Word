@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <textarea name="" id="textBar" cols="50" rows="10"></textarea>
+        <p id="para"></p>
+            <p id="wordCount"></p>
+        <button id="btn" onclick="getElement()">Count Character's & Word's</button>
+    </div>
+
+    <script>
+
+
+
+      var words = document.getElementById("textBar");
+function getElement() {
+    var textBox = document.getElementById("textBar").value.length;
+    document.getElementById("para").innerHTML = "The Total Character = " + textBox;
+     var count = words.value;
+     var spli = count.split(" ");
+
+     var number = spli.length;
+     document.getElementById("wordCount").innerHTML =  "The Total Words = " + number
+}
+
+    </script>
+</body>
+</html>
